@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="ToDoList.ToDoList.items" table="items">
+<id name="ItemId" type="int" column="ID" >
+<generator class="increment"/>
+</id>
+<property name="userId">
+ <column name="userId"/>
+</property>
+<property name="ItemDesc">
+ <column name="ItemDescription"/>
+</property>
+ </class>
+</hibernate-mapping>
